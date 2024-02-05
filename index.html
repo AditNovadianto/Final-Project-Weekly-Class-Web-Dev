@@ -13,7 +13,7 @@
     <nav class="navbar">
       <a href="#">Aditya Novadianto Pratama</a>
 
-      <div>
+      <div class="navbar-content">
         <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -539,9 +539,87 @@
           <h2>Contact Me</h2>
           <div class="lane-in-contacts"></div>
         </div>
+
+        <div class="contacts-content">
+          <div class="phone-number">
+            <div>
+              <i class="fa-solid fa-phone" style="color: rgb(0, 255, 0)"></i>
+
+              <h2>Phone Number</h2>
+            </div>
+
+            <p>085921269242</p>
+          </div>
+
+          <div class="email">
+            <div>
+              <i class="fa-solid fa-envelope" style="color: rgb(0, 255, 0)"></i>
+
+              <h2>Email</h2>
+            </div>
+
+            <p>aditya.novadianto@gmail.com</p>
+          </div>
+
+          <div class="location">
+            <div>
+              <i
+                class="fa-solid fa-location-dot"
+                style="color: rgb(0, 255, 0)"
+              ></i>
+
+              <h2>Location</h2>
+            </div>
+
+            <p>Bintaro sektor 9, Tangerang Selatan</p>
+          </div>
+
+          <form>
+            <div>
+              <input
+                type="text"
+                placeholder="Name"
+                id="name"
+                style="display: block"
+              />
+
+              <p id="errorName">Nama Tidak Boleh Kosong!</p>
+            </div>
+
+            <div>
+              <input
+                type="email"
+                placeholder="Email"
+                id="email"
+                style="display: block"
+              />
+
+              <p id="errorEmail">Email Tidak Boleh Kosong!</p>
+            </div>
+
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              style="display: block"
+            ></textarea>
+
+            <button id="submit" type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </main>
 
+    <footer>
+      <p>© 2024 Aditya Novadianto Pratama</p>
+    </footer>
+
     <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f070459290.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

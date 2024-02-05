@@ -25,6 +25,7 @@ body {
 
 .navbar-scroll {
   background-color: #09203a;
+  padding: 20px 50px;
 }
 
 .navbar a {
@@ -36,17 +37,22 @@ body {
   width: max-content;
 }
 
-.navbar div {
+.navbar .navbar-content {
   display: flex;
   background-color: transparent;
   align-items: center;
   justify-content: space-evenly;
   gap: 20px;
   width: 50%;
-  padding: 0px 150px;
+  transition: all 0.3s ease-in-out;
+  padding: 0px 200px;
 }
 
-.navbar div a {
+.navbar .navbar-content.navbar-content-scroll {
+  padding: 0px 100px;
+}
+
+.navbar .navbar-content a {
   text-decoration: none;
   color: white;
   background-color: transparent;
@@ -57,11 +63,11 @@ body {
   box-sizing: border-box;
 }
 
-.navbar div a:hover {
+.navbar .navbar-content a:hover {
   color: rgb(0, 255, 0);
 }
 
-.navbar div a:focus {
+.navbar .navbar-content a:focus {
   text-decoration: underline;
   color: rgb(0, 255, 47);
 }
@@ -465,6 +471,21 @@ main
   gap: 20px;
   text-decoration: none;
   color: white;
+  transition: ease-in-out 0.2s;
+}
+
+main
+  .projects
+  .projects-content
+  .template-projects
+  .projects-description
+  .links
+  .link-projects:hover {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  color: rgb(0, 255, 0);
 }
 
 main
@@ -586,15 +607,15 @@ main
 /* Contacts Section */
 main .contacts {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   /* margin-top: -50px; */
-  padding: 100px 100px 0px 100px;
   margin-top: 100px;
 }
 
 main .contacts .title {
   display: flex;
   align-items: center;
+  padding: 100px 100px 0px 100px;
   gap: 10px;
 }
 
@@ -608,4 +629,161 @@ main .contacts .title .lane-in-contacts {
 main .contacts .title h2 {
   color: white;
   text-transform: uppercase;
+}
+
+main .contacts .contacts-content {
+  width: 50%;
+  margin: 100px auto;
+}
+
+/* Phone Number */
+main .contacts .contacts-content .phone-number {
+  color: white;
+}
+
+main .contacts .contacts-content .phone-number div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+main .contacts .contacts-content .phone-number div i {
+  font-size: 30px;
+}
+
+main .contacts .contacts-content .phone-number p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Email */
+main .contacts .contacts-content .email {
+  color: white;
+  margin-top: 50px;
+}
+
+main .contacts .contacts-content .email div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+main .contacts .contacts-content .email div i {
+  font-size: 30px;
+}
+
+main .contacts .contacts-content .email p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Location */
+main .contacts .contacts-content .location {
+  color: white;
+  margin-top: 50px;
+}
+
+main .contacts .contacts-content .location div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+main .contacts .contacts-content .location div i {
+  font-size: 30px;
+}
+
+main .contacts .contacts-content .location p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Form */
+main .contacts .contacts-content form {
+  color: white;
+  margin-top: 50px;
+  overflow: visible;
+}
+
+main .contacts .contacts-content form input {
+  width: 95%;
+  padding: 15px;
+  margin: 3px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #09203a;
+  color: white;
+  font-size: 20px;
+}
+
+main .contacts .contacts-content form p#errorName,
+p#errorEmail {
+  margin-top: 10px;
+  font-size: 15px;
+  color: red;
+  margin-left: 10px;
+  display: none;
+}
+
+main .contacts .contacts-content form p#errorName.error,
+p#errorEmail.error {
+  margin-top: 10px;
+  font-size: 15px;
+  color: red;
+  margin-left: 10px;
+  display: block;
+}
+
+main .contacts .contacts-content form textarea {
+  width: 95%;
+  padding: 15px;
+  margin: 3px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #09203a;
+  color: white;
+  font-size: 20px;
+}
+
+main .contacts .contacts-content form button {
+  width: 99%;
+  padding: 15px;
+  margin: 3px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #09203a;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+main .contacts .contacts-content form button:hover {
+  background-color: #0a2a4e;
+}
+
+/* Footer Section */
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #09203a;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  margin-top: 100px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
