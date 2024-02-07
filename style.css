@@ -37,6 +37,10 @@ body {
   width: max-content;
 }
 
+.navbar button {
+  display: none;
+}
+
 .navbar .navbar-content {
   display: flex;
   background-color: transparent;
@@ -46,6 +50,10 @@ body {
   width: 50%;
   transition: all 0.3s ease-in-out;
   padding: 0px 200px;
+}
+
+.navbar .navbar-content-mobile {
+  display: none;
 }
 
 .navbar .navbar-content.navbar-content-scroll {
@@ -229,7 +237,8 @@ main .skills .skills-content {
   margin-top: 50px;
   display: flex;
   align-items: start;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 100px;
   width: 85%;
   justify-content: space-between;
 }
@@ -303,7 +312,7 @@ main .skills .skills-content .backend {
 main .skills .skills-content .content-backend {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
   margin-top: 30px;
 }
 
@@ -339,7 +348,7 @@ main .skills .skills-content .other {
 main .skills .skills-content .content-other {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
   margin-top: 30px;
 }
 
@@ -786,4 +795,249 @@ footer {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  /* About Section */
+  main .about .title {
+    padding: 100px 0px 0px 30px !important;
+  }
+
+  /* Skills Section */
+  main .skills .title {
+    padding: 100px 0px 0px 30px !important;
+  }
+
+  /* Projects Section */
+  main .projects .title {
+    padding: 100px 0px 0px 30px !important;
+  }
+
+  main .projects .projects-content .template-projects {
+    width: 80%;
+  }
+
+  /* Certificates Section */
+  main .certificates .title {
+    padding: 100px 0px 0px 30px !important;
+  }
+
+  main .certificates .certificates-content .template-certificates {
+    width: 80% !important;
+  }
+
+  /* Contacts Section */
+  main .contacts .title {
+    padding: 100px 0px 0px 30px !important;
+  }
+
+  main .contacts .contacts-content form input {
+    width: 90% !important;
+  }
+
+  main .contacts .contacts-content form textarea {
+    width: 90% !important;
+  }
+
+  main .contacts .contacts-content form button {
+    width: 99% !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar a {
+    font-size: 15px;
+  }
+  .navbar {
+    padding: 20px 50px;
+  }
+
+  .navbar-scroll {
+    padding: 20px 20px;
+  }
+
+  .navbar button {
+    margin: 0px 100px !important;
+  }
+
+  .navbar button.hamburger-scroll {
+    margin: 0px 50px !important;
+  }
+
+  main .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main .profile .contact {
+    justify-content: center;
+  }
+
+  /* About Section */
+  main .about {
+    height: max-content;
+    padding: 0px;
+  }
+
+  main .about .title {
+    padding: 100px 0px 0px 100px;
+  }
+
+  main .about .about-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .about .about-content p {
+    padding: 0px;
+    margin: auto;
+  }
+
+  /* Skills Section */
+  main .skills {
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+  main .skills .title {
+    padding: 100px 0px 0px 100px;
+  }
+
+  main .skills .skills-content {
+    flex-direction: column;
+    width: 100%;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Projects Section */
+  main .projects {
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+  main .projects .title {
+    padding: 100px 0px 0px 100px;
+  }
+
+  main .projects .projects-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0px;
+    gap: 50px;
+  }
+
+  /* Certificates Section */
+  main .certificates {
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+  main .certificates .title {
+    padding: 100px 0px 0px 100px;
+  }
+
+  main .certificates .certificates-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0px;
+    gap: 50px;
+  }
+
+  /* Contacts Section */
+  main .contacts {
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+  main .contacts .title {
+    padding: 100px 0px 0px 100px;
+  }
+
+  main .contacts .contacts-content {
+    width: 90%;
+    padding: 0px;
+  }
+
+  main .contacts .contacts-content form {
+    width: 100%;
+  }
+
+  main .contacts .contacts-content form input {
+    width: 93%;
+  }
+
+  main .contacts .contacts-content form textarea {
+    width: 93%;
+  }
+
+  main .contacts .contacts-content form button {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .navbar button {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+    margin: 0px 200px;
+    font-size: 30px;
+    border: none;
+  }
+
+  .navbar button.hamburger-scroll {
+    margin: 0px 100px;
+  }
+
+  .navbar .navbar-content {
+    display: none;
+  }
+
+  .navbar .navbar-content-mobile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 20px;
+    width: 70%;
+    padding: 50px;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+    background: #0a2a4e;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .navbar .navbar-content-mobile.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar .navbar-content-mobile a {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    transition: ease-in-out 0.2s;
+  }
+
+  .navbar .navbar-content-mobile a:hover {
+    color: rgb(0, 255, 0);
+  }
 }
