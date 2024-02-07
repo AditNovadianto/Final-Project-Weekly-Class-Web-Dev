@@ -994,6 +994,7 @@ footer {
     margin: 0px 200px;
     font-size: 30px;
     border: none;
+    cursor: pointer;
   }
 
   .navbar button.hamburger-scroll {
